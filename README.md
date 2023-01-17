@@ -37,7 +37,3 @@ git checkout module_1
 #option 3 - HTTPS
 git clone --branch module_1 https://github.com/bobby-didcoding/drf_course.git .
 ```
-
-***
-***
-
