@@ -19,10 +19,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_extensions', #Great packaged to access abstract models
-    'django_filters', #Used with DRF
-    'rest_framework', #DRF package
-    'core', # New app
+    'django_extensions',
+    'django_filters',
+    'rest_framework',
+    'rest_framework.authtoken', #Used to enable token authentication
+    'core',
+    'ecommerce', #New app
 ]
 
 MIDDLEWARE = [
