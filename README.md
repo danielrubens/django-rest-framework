@@ -17,6 +17,7 @@ Requests to the API in [Curl](https://curl.se/) and [Httpie](https://httpie.io/)
 bash
 pip install requirements.txt
 python -m venv venv
+docker-compose up -d --build
 source venv/bin/activate
 cd backend
 python manage.py runserver
