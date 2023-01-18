@@ -22,3 +22,9 @@ source venv/bin/activate
 cd backend
 python manage.py runserver
 ```
+
+## Running unit tests
+```
+cd backend
+python manage.py test
+```
