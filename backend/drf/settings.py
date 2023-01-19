@@ -37,7 +37,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'drf_course.urls'
+ROOT_URLCONF = 'drf.urls'
 
 TEMPLATES = [
     {
@@ -55,7 +55,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'drf_course.wsgi.application'
+WSGI_APPLICATION = 'drf.wsgi.application'
 
 
 # Database
