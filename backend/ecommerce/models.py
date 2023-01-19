@@ -59,3 +59,27 @@ class Item(
             return order
         else:
             return None
+
+
+
+
+class Order(
+    TimeStampedModel,
+    ActivatorModel ,
+    Model):
+    """
+    ecommerce.Order
+    Stores a single order entry, related to :model:`ecommerce.Item` and
+    :model:`auth.User`.
+    """
+    class Meta:
+        verbose_name = 'Order'
+        verbose_name_plural = 'Orders'
+        ordering = ["id"]
+    
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+    item = models.ForeignKey(Item, null=True, blank=True, on_delete=models.CASCADE)
+    quantity = models.IntegerField(default=0)
+
+    def __str__(self):
+        return f'{self.user.username} - {self.item.title}'
