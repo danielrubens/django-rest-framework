@@ -14,7 +14,6 @@ Requests to the API in [Curl](https://curl.se/) and [Httpie](https://httpie.io/)
 
 ## Getting started
 ```
-bash
 pip install requirements.txt
 python -m venv venv
 docker-compose up -d --build
